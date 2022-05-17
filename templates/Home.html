@@ -12,7 +12,7 @@
         crossorigin="anonymous"></script>
         <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-core.min.js"></script>
       <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-pie.min.js"></script>
-      <script src="../Script/chart.js"></script>
+      <script src="{{url_for('static', filename = 'Script/chart.js')}}"></script>
     <title>Document</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Koulen&family=Montserrat:wght@500&family=Staatliches&display=swap');
@@ -46,7 +46,7 @@
                     </li>
                 </ul>
                 <span class="navbar-text">
-                    Login/Register
+                    <a class="nav-link" href="/signup">Login/Register</a>
                 </span>
             </div>
         </div>
